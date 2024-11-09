@@ -1,0 +1,14 @@
+/* ChatScreen.css */
+.chat-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .chat-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f9fafb;
+  }
+  
+  
