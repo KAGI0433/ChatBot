@@ -7,11 +7,20 @@ import { HiOutlineArrowsRightLeft } from "react-icons/hi2";
 import { VscSymbolInterface } from "react-icons/vsc";
 import { FaDollarSign } from "react-icons/fa6";
 import { IoSettingsOutline } from "react-icons/io5";
+import Icon from '../images/icon.png'
 
 function Sidebar() {
   return (
     <div className="sidebar">
-      <div className="sidebar-logo">Superpage</div>
+      <div className="sidebar-logo">
+    <img
+      src= {Icon}
+      alt="User Avatar"
+      className="user-avatar"
+      style={{ marginRight: '8px' }}
+    /> <span>Superpage</span>
+
+  </div>
       <ul className="sidebar-menu">
       <li>
         <RiChat1Line style={{ marginRight: '8px' }} />
