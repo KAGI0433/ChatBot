@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { SlCursor } from "react-icons/sl";
+
 function MessageInput({ setMessages }) {
   const [input, setInput] = useState('');
 
