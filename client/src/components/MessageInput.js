@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { SlCursor } from "react-icons/sl";
 function MessageInput({ setMessages }) {
   const [input, setInput] = useState('');
 
@@ -28,7 +28,7 @@ const handleSendMessage = async () => {
         value={input}
         onChange={(e) => setInput(e.target.value)}
       />
-      <button onClick={handleSendMessage}>Send</button>
+      <button onClick={handleSendMessage}><SlCursor /></button>
     </div>
   );
 }
