@@ -85,33 +85,7 @@
   width: 30px;
   height: 30px;
 }
-/* ChatHistory.css */
-.chat-history {
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ffffff;
-}
 
-.history-box {
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 30px;
-  text-align: center;
-  max-width: 400px;
-}
-
-.no-questions p {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 15px 0;
-}
-
-.no-questions span {
-  font-size: 14px;
-  color: #777;
-}
 /* MessageInput.css */
 .message-input {
   display: flex;

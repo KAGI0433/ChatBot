@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import Cartoon from '../images/cartoon.jpg'
+import Guy from '../images/guy.jpg'
 
 export const NoQuestionsScreen = () => (
   <div className="main-content">
@@ -25,14 +26,23 @@ export const QuestionsScreen = () => (
     <div className="search-history">
       <h4>Search History</h4>
       <ul>
-        <li>How to design SaaS web application UI... <span>2 questions asked</span></li>
-        <li>Designing SaaS UI as a developer <span>2 questions asked</span></li>
-        <li>Figma design tips and tricks <span>34 questions asked</span></li>
-        <li>List our SaaS UX testing methods and... <span>20 questions asked</span></li>
-        <li>Write coding for landing page with HTML... <span>2 questions asked</span></li>
-        <li>How to use Superpage UI? <span>28 questions asked</span></li>
+      <li>
+      <img src= {Guy} alt="Icon for question 1" style={{ width: "20px", height: "20px", verticalAlign: "middle", marginRight: "8px" }}
+      />
+    How to design SaaS web application UI... <span>2 questions asked</span>
+      </li>
+        <li> <img src= {Guy} alt="Icon for question 1" style={{ width: "20px", height: "20px", verticalAlign: "middle", marginRight: "8px" }}
+      />Designing SaaS UI as a developer <span>2 questions asked</span></li>
+        <li> <img src= {Guy} alt="Icon for question 1" style={{ width: "20px", height: "20px", verticalAlign: "middle", marginRight: "8px" }}
+      />Figma design tips and tricks <span>34 questions asked</span></li>
+        <li> <img src= {Guy} alt="Icon for question 1" style={{ width: "20px", height: "20px", verticalAlign: "middle", marginRight: "8px" }}
+      />List our SaaS UX testing methods and... <span>20 questions asked</span></li>
+        <li> <img src= {Guy} alt="Icon for question 1" style={{ width: "20px", height: "20px", verticalAlign: "middle", marginRight: "8px" }}
+      />Write coding for landing page with HTML... <span>2 questions asked</span></li>
+        <li> <img src= {Guy} alt="Icon for question 1" style={{ width: "20px", height: "20px", verticalAlign: "middle", marginRight: "8px" }}
+      />How to use Superpage UI? <span>28 questions asked</span></li>
       </ul>
-      <button className="clear-button">Clear History</button>
+      
     </div>
     <div className="search-bar">
       <input type="text" placeholder="Type new questions" />

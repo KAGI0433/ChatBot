@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
 import ChatHeader from './ChatHeader';
-import ChatHistory from './ChatHistory';
 import ChatBox from './ChatBox';
 import MessageInput from './MessageInput';
 import { NoQuestionsScreen, QuestionsScreen } from './QuestionsScreen';
@@ -21,7 +20,6 @@ function ChatScreen() {
         ) : (
           <div className="chat-content">
             <QuestionsScreen />
-            <ChatHistory />
             <ChatBox messages={messages} />
           </div>
         )}

@@ -6,8 +6,8 @@ function ChatHeader() {
   return (
     <div className="chat-header">
       <div className="chat-header-text">
-        <h2>Get answers in seconds</h2>
-        <p>Create and complete tasks using boards</p>
+        
+        <p></p>
       </div>
       <div className="chat-user">
         <span>Johnson Doe</span>
