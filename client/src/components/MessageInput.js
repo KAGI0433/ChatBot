@@ -27,6 +27,7 @@ const handleSendMessage = async () => {
       <input
         type="text"
         value={input}
+        placeholder="Write Coding about new HTML Tags" 
         onChange={(e) => setInput(e.target.value)}
       />
       <button onClick={handleSendMessage}><SlCursor /></button>
