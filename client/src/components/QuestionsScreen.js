@@ -2,6 +2,8 @@ import React from 'react';
 import '../App.css';
 import Cartoon from '../images/cartoon.jpg'
 import Guy from '../images/guy.jpg'
+import { MdMicNone } from "react-icons/md";
+import { SlCursor } from "react-icons/sl";
 
 export const NoQuestionsScreen = () => (
   <div className="main-content">
@@ -82,16 +84,22 @@ export const QuestionsScreen = () => (
 
 
     </div>
+    <div className="chat-suggestions">
+  <h4>Chat Suggestions</h4>
+  <div className="button-container">
+    <button>Write code for</button>
+    <button>Explain more</button>
+    <button>Explain more</button>
+    <button>Explain more</button>
+    <button>Explain more</button>
+  </div>
+</div>
+
     <div className="search-bar">
       <input type="text" placeholder="Type new questions" />
-      <button className="send-button">Send</button>
-    </div>
-    <div className="chat-suggestions">
-      <button>Write code for</button>
-      <button>Explain more</button>
-      <button>Explain more</button>
-      <button>Explain more</button>
-      <button>Explain more</button>
+      <button className='send-button'><MdMicNone /></button>
+      <button className='send-button'><SlCursor /></button>
+      
     </div>
   </div>
 );
