@@ -17,7 +17,6 @@ const handleSendMessage = async () => {
     const data = await response.json();
     setMessages(prev => [...prev, { text: data, isUser: false }]);
   } catch {
-    setMessages(prev => [...prev, { text: 'Error retrieving response', isUser: false }]);
   }
 };
 

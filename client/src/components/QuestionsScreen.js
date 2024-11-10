@@ -24,25 +24,63 @@ export const QuestionsScreen = () => (
     <h3>Get answers in seconds</h3>
     <p>Create and complete tasks using boards</p>
     <div className="search-history">
+        <div className="search-header">
       <h4>Search History</h4>
-      <ul>
-      <li>
-      <img src= {Guy} alt="Icon for question 1" style={{ width: "20px", height: "20px", verticalAlign: "middle", marginRight: "8px" }}
-      />
-    How to design SaaS web application UI... <span>2 questions asked</span>
-      </li>
-        <li> <img src= {Guy} alt="Icon for question 1" style={{ width: "20px", height: "20px", verticalAlign: "middle", marginRight: "8px" }}
-      />Designing SaaS UI as a developer <span>2 questions asked</span></li>
-        <li> <img src= {Guy} alt="Icon for question 1" style={{ width: "20px", height: "20px", verticalAlign: "middle", marginRight: "8px" }}
-      />Figma design tips and tricks <span>34 questions asked</span></li>
-        <li> <img src= {Guy} alt="Icon for question 1" style={{ width: "20px", height: "20px", verticalAlign: "middle", marginRight: "8px" }}
-      />List our SaaS UX testing methods and... <span>20 questions asked</span></li>
-        <li> <img src= {Guy} alt="Icon for question 1" style={{ width: "20px", height: "20px", verticalAlign: "middle", marginRight: "8px" }}
-      />Write coding for landing page with HTML... <span>2 questions asked</span></li>
-        <li> <img src= {Guy} alt="Icon for question 1" style={{ width: "20px", height: "20px", verticalAlign: "middle", marginRight: "8px" }}
-      />How to use Superpage UI? <span>28 questions asked</span></li>
-      </ul>
-      
+      <button className="clear-history-button">
+            Clear Chat History
+          </button>
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px" }}>
+  <div className="item">
+    <img src={Guy} alt="Icon for question 1" style={{ width: "20px", height: "20px", marginRight: "8px" }} />
+    <div>
+      <p>How to design SaaS web application UI</p>
+      <span>2 questions asked • 2 minutes ago</span>
+    </div>
+  </div>
+
+  <div className="item">
+    <img src={Guy} alt="Icon for question 1" style={{ width: "20px", height: "20px", marginRight: "8px" }} />
+    <div>
+      <p>Designing SaaS UI as a developer</p>
+      <span>2 questions asked • 2 minutes ago</span>
+    </div>
+  </div>
+
+  <div className="item">
+    <img src={Guy} alt="Icon for question 1" style={{ width: "20px", height: "20px", marginRight: "8px" }} />
+    <div>
+      <p>Figma design tips and tricks</p>
+      <span>34 questions asked • 2 minutes ago</span>
+    </div>
+  </div>
+
+  <div className="item">
+    <img src={Guy} alt="Icon for question 1" style={{ width: "20px", height: "20px", marginRight: "8px" }} />
+    <div>
+      <p>List our SaaS UX testing methods and...</p>
+      <span>20 questions asked • 2 minutes ago</span>
+    </div>
+  </div>
+
+  <div className="item">
+    <img src={Guy} alt="Icon for question 1" style={{ width: "20px", height: "20px", marginRight: "8px" }} />
+    <div>
+      <p>Write coding for landing page with HTML...</p>
+      <span>2 questions asked • 2 minutes ago</span>
+    </div>
+  </div>
+
+  <div className="item">
+    <img src={Guy} alt="Icon for question 1" style={{ width: "20px", height: "20px", marginRight: "8px" }} />
+    <div>
+      <p>How to use Superpage UI?</p>
+      <span>28 questions asked • 2 minutes ago</span>
+    </div>
+  </div>
+</div>
+
+
     </div>
     <div className="search-bar">
       <input type="text" placeholder="Type new questions" />

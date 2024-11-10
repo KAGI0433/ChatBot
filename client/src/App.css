@@ -147,29 +147,6 @@
   margin-bottom: 10px;
 }
 
-.search-history ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.search-history ul li {
-  font-size: 14px;
-  padding: 8px 0;
-  border-bottom: 1px solid #ddd;
-  display: flex;
-  justify-content: space-between;
-}
-
-.clear-button {
-  margin-top: 10px;
-  background-color: #6c63ff;
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
 .search-bar {
   display: flex;
   align-items: center;
@@ -208,5 +185,51 @@
   border-radius: 20px;
   background-color: white;
   cursor: pointer;
+}
+
+.search-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h3, .header h4 {
+  margin: 0;
+  flex-grow: 1; 
+  text-align: left; 
+}
+
+.clear-history-button {
+  background-color: 	#f2f2f2;
+  color: black;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.clear-history-button:hover {
+  background-color: #6c63ff;
+}
+/* Styles.css */
+.item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.item:hover {
+  background-color: #f0f0f0; /* Light grey background on hover */
+}
+
+.item p {
+  color: black;
+  margin: 0;
+}
+
+.item span {
+  color: grey;
 }
 
