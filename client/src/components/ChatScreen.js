@@ -3,7 +3,8 @@ import Sidebar from './Sidebar';
 import ChatHeader from './ChatHeader';
 import ChatBox from './ChatBox';
 import MessageInput from './MessageInput';
-import { NoQuestionsScreen, QuestionsScreen } from './QuestionsScreen';
+import { NoQuestionsScreen } from './QuestionsScreen';
+import ChatApp from './ChatApp'; // Import your ChatApp component
 import './ChatScreen.css';
 
 function ChatScreen() {
@@ -19,7 +20,8 @@ function ChatScreen() {
           <NoQuestionsScreen />
         ) : (
           <div className="chat-content">
-            <QuestionsScreen />
+            {/* Replace QuestionsScreen with ChatApp */}
+            <ChatApp />
             <ChatBox messages={messages} />
           </div>
         )}
