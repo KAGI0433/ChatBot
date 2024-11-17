@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import Cartoon from '../images/cartoon.jpg'
+import Shot from '../images/shot.png'
 import Guy from '../images/guy.jpg'
 import { MdMicNone } from "react-icons/md";
 import { SlCursor } from "react-icons/sl";
@@ -12,7 +12,7 @@ export const NoQuestionsScreen = () => (
     <div className="history-box">
         <h3>Search History</h3>
         <div className="no-questions">
-          <img src={Cartoon} alt="No questions"  style={{ width: '200px', height: 'auto' }}/>
+          <img src={ Shot } alt="No questions"  style={{ width: '200px', height: 'auto' }}/>
           <p>No Questions added</p>
           <span>Type your questions to below input and get fast answers</span>
         </div>

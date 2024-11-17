@@ -4,7 +4,7 @@ import ChatHeader from './ChatHeader';
 import ChatBox from './ChatBox';
 import MessageInput from './MessageInput';
 import { NoQuestionsScreen } from './QuestionsScreen';
-import ChatApp from './ChatApp'; // Import your ChatApp component
+import ChatApp from './ChatApp'; 
 import './ChatScreen.css';
 
 function ChatScreen() {
@@ -20,7 +20,7 @@ function ChatScreen() {
           <NoQuestionsScreen />
         ) : (
           <div className="chat-content">
-            {/* Replace QuestionsScreen with ChatApp */}
+            
             <ChatApp />
             <ChatBox messages={messages} />
           </div>
