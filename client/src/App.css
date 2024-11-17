@@ -1,17 +1,15 @@
 /* General App Styles */
 .app {
-  display: flex;
-  flex-direction: row; /* Sidebar and chat side-by-side */
-  height: 100vh; /* Full viewport height */
-  width: 100vw; /* Full viewport width */
-  background-color: #f9f9f9;
+  height: 100vh; 
+  width: 100vw; 
+  background-color: blue;
   font-family: Arial, sans-serif;
-  overflow: hidden; /* Prevent scrollbars */
+  
 }
 
 /* Sidebar.css */
 .sidebar {
-  width: 250px; /* Wider sidebar for better spacing */
+  width: 250px; 
   background-color: #f4f4f4;
   padding: 20px;
   border-right: 1px solid #ddd;
@@ -30,12 +28,19 @@
 }
 
 .sidebar ul li {
+  display: flex; 
+  align-items: center; 
   margin-bottom: 10px;
   padding: 10px;
   cursor: pointer;
   color: #555;
   transition: background-color 0.3s ease;
 }
+
+.sidebar ul li i {
+  margin-right: 8px; 
+}
+
 
 .sidebar ul li:hover {
   background-color: #eaeaea;
@@ -54,39 +59,50 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #e0e0e0;
-  position: sticky;
+  padding: 16px 24px; 
+  background-color: #ffffff; 
+  border-bottom: 1px solid #e6e6e6; 
+  position: sticky; 
   top: 0;
   z-index: 1000;
 }
 
+.chat-header-text {
+  display: flex;
+  flex-direction: column;
+}
+
 .chat-header-text h2 {
-  font-size: 20px;
+  font-size: 18px; 
+  font-weight: 600; 
   margin: 0;
+  color: #333; 
 }
 
 .chat-header-text p {
   font-size: 14px;
-  color: #777;
-  margin: 0;
+  color: #888; 
+  margin: 4px 0 0 0; 
 }
 
 .chat-user {
   display: flex;
   align-items: center;
+  gap: 12px; 
 }
 
 .chat-user span {
-  margin-right: 10px;
-  font-weight: bold;
+  font-size: 14px; 
+  color: #555; 
+  font-weight: 500;
 }
 
 .user-avatar {
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 32px; 
+  height: 32px;
+  border: 1px solid #e0e0e0; 
+  object-fit: cover; 
 }
 
 /* ChatApp.css */
@@ -233,10 +249,80 @@
   transform: scale(1.05);
 }
 
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px; 
+  text-align: center;
+  background-color: #fafafa; 
+  height: 100vh; 
+}
+
+.main-content h3 {
+  font-size: 22px; 
+  font-weight: 600; 
+  color: #333;
+  margin-bottom: 8px; 
+}
+
+.main-content p {
+  font-size: 16px; 
+  color: #666; 
+  margin-bottom: 32px; 
+}
+
+.history-box {
+  width: 100%;
+  max-width: 600px; 
+  background-color: #ffffff; 
+  border: 1px solid #e6e6e6; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+  padding: 24px;
+}
+
+.history-box h3 {
+  font-size: 20px; 
+  color: #444; 
+  font-weight: 600; 
+  margin-bottom: 16px;
+  text-align: left; 
+}
+
+.no-questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border: 2px dashed #ddd; 
+  border-radius: 8px;
+  background-color: #f9f9f9; 
+}
+
+.no-questions img {
+  margin-bottom: 16px; 
+}
+
+.no-questions p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+  margin: 0 0 8px 0; 
+}
+
+.no-questions span {
+  font-size: 14px; 
+  color: #888; 
+}
+
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .app {
-    flex-direction: column; /* Stack sidebar and chat vertically */
+    flex-direction: column; 
   }
 
   .sidebar {

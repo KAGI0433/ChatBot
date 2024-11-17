@@ -13,7 +13,7 @@ const ChatApp = () => {
   const [error, setError] = useState(null);
 
   // Initialize Google Generative AI
-  const genAI = new GoogleGenerativeAI(process.env.REACT_APP_GEMINI_API_KEY);
+  const genAI = new GoogleGenerativeAI("AIzaSyBSlBqShZML7jwR03-Yi3rkCgNv2Qaiso0");
   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
   const handleUserInput = (e) => setUserInput(e.target.value);

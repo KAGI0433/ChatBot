@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { SlCursor } from "react-icons/sl";
-
+import "../components/MessageInput.css"
 function MessageInput({ setMessages }) {
   const [input, setInput] = useState('');
 
