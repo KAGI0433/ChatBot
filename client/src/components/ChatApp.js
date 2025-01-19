@@ -13,7 +13,7 @@ const ChatApp = () => {
   const [error, setError] = useState(null);
 
   // Initialize Google Generative AI
-  const genAI = new GoogleGenerativeAI("AIzaSyBSlBqShZML7jwR03-Yi3rkCgNv2Qaiso0");
+  const genAI = new GoogleGenerativeAI("AIzaSyC5cRJIopFJ-HPbfE-7apGPOJitX8CsKqQ");
   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
   // Fetch chat history on component mount
